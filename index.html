@@ -6,7 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>古鑫欣的个人网站</title>
 </head>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        width: 1000px;
+        height: 550px;
+        border: 1px solid #000;
+        margin: 100px auto;
+    }
+    #ground{
+        width: 1000px;
+        height: 500px;
+        position: relative;
+    }
+    #button{
+        float: right;
+        height: 50px;
+        line-height: 50px;
+    }
+    button{
+        width: 50px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .block{
+        width: 20px;
+        height: 20px;
+        background: #2abad9;
+        float: left;
+    }
+    .snakeBody{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: #f57926;
+    }
+    .food{
+        width: 20px;
+        height: 20px;
+        background: green;
+        position: absolute;
+    }
+    </style>
 <body>
-    <h1>hello nihao</h1>
+    <div id="container">
+        <div id="ground"></div>
+        <div id="gameControl">
+            <div id="button">
+                <button id="start">开始</button>
+                <button id="pause">暂停</button>
+                <span>键盘的上下左右控制方向</span>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./snake.js"></script>
 </html>
